@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="author" content="Alina Melnyk"/>
+    <meta name="description" content="Resume by Alina Melnyk"/>
+    <meta name="keywords" content="Alina Melnyk, resume, резюме Алина Мельник"/>
+    <link rel="stylesheet" href="./style/style.css" type="text/css" media="all">
+    <script type="text/javascript" src="./scripts/libs/underscore-min.js"></script>
+</head>
+<body>
+    <div id="container">
+
+    </div>
+
+    <script type="text/javascript" src="./scripts/models/baseModel.js"></script>
+    <script type="text/javascript" src="./scripts/models/homeModel.js"></script>
+    <script type="text/javascript" src="./scripts/views/baseView.js"></script>
+    <script type="text/javascript" src="./scripts/views/homeView.js"></script>
+    <script type="text/javascript" src="./scripts/appController.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            this.appController = new AppController();
+        }
+    </script>
+</body>
+</html>

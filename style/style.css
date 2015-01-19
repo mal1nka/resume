@@ -1,0 +1,399 @@
+/*css reset by Eric Meyer*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	cursor: pointer;
+}
+/*-----------------------*/
+
+body {
+	height: 100%;
+	width: 100%;
+    background: #ffffff;
+}
+
+#container {
+	border-radius: 0 0 25px 25px;
+	margin: auto;
+	height: auto;
+	width: 700px;
+	-webkit-border-radius: 0 0 25px 25px;
+	box-shadow: 5px 5px 25px rgba(0,0,0,0.7); /* Параметры тени */
+    -webkit-box-shadow: 5px 5px 25px rgba(0,0,0,0.7); /* Для Safari и Chrome */
+    color: #7d7c7c;
+}
+
+#header {
+	background: url(img/header.png) no-repeat;
+	border-radius: 0 0 25px 25px;
+	height: 145px;
+	position: relative;
+	width: 700px;
+	-webkit-border-radius: 0 0 25px 25px;
+}
+
+#header h3{
+    float: left;
+    margin-left: 20px;
+}
+
+h1 {
+	behavior: url(PIE.htc);
+	color: #fff;
+	font-family: Myriad Pro, Arial, sans-serif;
+	font-size: 48pt;
+	height: 125px;
+	text-align: center;
+	text-shadow:2px 2px 2px #636363;
+	width: 300px;
+	margin: auto;
+}
+
+.title_section {
+	display: inline-block;
+	color: #00a15a;
+    line-height: 50px;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+h3 {
+	display: inline-block;
+	color: #cf3e27;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 16pt;
+	font-weight: bold;
+	margin: 5px 0px 0px 10px;
+}
+
+h4  {
+	color: #fff;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 16px;
+}
+
+h5 {
+	color: #fff;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 12px;
+}
+
+
+#content {
+    min-height: 630px;
+	width: 700px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about, .education, .skills, .exp {
+    z-index: 3;
+	float: left;
+    min-height: 315px;
+	width: 50%;
+    overflow: hidden;
+    padding: 20px 0 0 40px;
+    box-sizing: border-box;
+}
+
+.education, .exp {
+	float: right;
+}
+
+.skills, .exp {
+	padding-top: 110px;
+}
+
+.title {
+	height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.circle {
+	background-color: #f7aab1;
+	border-radius: 100%;
+	display: inline-block;
+	float: left;
+	height: 50px;
+	position: relative;
+	width: 50px;
+	-webkit-border-radius: 100%;
+    margin-right: 10px;
+}
+
+.arrow {
+	background: url(img/arrow.png) no-repeat center center;
+    width: 100%;
+    height: 100%;
+}
+
+.section {
+	height: auto;
+    padding: 0 27px 0 19px;
+	z-index: 5;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.3;
+    box-sizing: border-box;
+
+}
+.section span {
+    font-weight: bold;
+}
+
+
+#center {
+    position: absolute;
+    height: 366px;
+    width: 100%;
+    top: 50%;
+    margin-top: -183px;
+    background: url(img/bg-1.png) no-repeat center center;
+
+}
+
+#contact {
+    position: absolute;
+    height: 366px;
+    width: 366px;
+    left: 50%;
+    margin-left: -183px;
+    top: 50%;
+    margin-top: -183px;
+    z-index: 2;
+    padding: 63px;
+    box-sizing: border-box;
+}
+
+#rope-right, #rope-left {
+    height: 239px;
+    position: absolute;
+    width: 28px;
+    left: 50%;
+    margin-left: -13px;
+}
+
+#rope-left {
+    background: url(img/02.png) no-repeat;
+    background-size: 110% 101%;
+    z-index: 1;
+}
+#rope-right {
+    background: url(img/01.png) no-repeat;
+    background-size: 110% 97%;
+    z-index: 5;
+}
+
+#circle {
+	background-color: #fff;
+	border-radius: 100%;
+    -webkit-border-radius: 100%;
+	height: 100%;
+	width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+#middle {
+	background-color: #d03d48;
+	border-radius: 100%;
+	height: 100%;
+	width: 100%;
+	-webkit-border-radius: 100%;
+     text-align: center;
+}
+
+.title_contact {
+    color: #fff;
+    font-family: Myriad Pro, Arial, sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: center;
+    padding: 35px 0 5px;
+}
+
+#bubble1,
+#bubble2,
+#bubble3,
+#bubble4 {
+	border-radius: 100%;
+	display: inline-block;
+	position: absolute;
+	-webkit-border-radius: 100%;
+    top: 50%;
+    z-index: 2;
+}
+
+#bubble1,
+#bubble2 {
+	background-color: #f0f0f0;
+	height: 66px;
+	width: 66px;
+    margin-top: -33px;
+}
+
+#bubble1 {
+    right: 109px;
+}
+
+#bubble2 {
+    left: 109px;
+}
+
+#bubble3,
+#bubble4 {
+	background-color: #f4f3f3;
+	height: 40px;
+	width: 40px;
+    margin-top: -20px;
+}
+
+#bubble3 {
+	right: 69px;
+}
+
+#bubble4 {
+	left: 69px;
+}
+#middle li {
+	display: block;
+    padding: 7px 0;
+    box-sizing: border-box;
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+#middle li div {
+    color: #ffffff;
+}
+#middle li .hint {
+    font-weight: bold;
+    line-height: 1.3;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+
+#middle h4 {
+	margin-left: 25px;
+}
+
+#footer {
+	background: url(img/footer.png) no-repeat center bottom;
+	border-radius: 0 0 25px 25px;
+	height: 117px;
+	width: 100%;
+	-webkit-border-radius: 0 0 25px 25px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.download {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    color: #00a15a;
+    line-height: 50px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.download a {
+    margin-left: 10px;
+    color: #00a15a;
+}
+
+.socialButtons {
+	display: inline-block;
+    padding: 7px 0;
+}
+
+#googlePlus, 
+#facebook, 
+#LinkedIn, 
+#GitHub,
+#lastfm {
+	background-repeat: no-repeat;
+    background-size: 34px 34px;
+	width: 34px;
+	height: 34px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+
+ 
+#googlePlus {
+	background-image: url(img/googleplus.png);
+	border-radius: 10px;
+}
+
+	
+#facebook {
+	width:43px;
+	height:43px;
+	background-image: url(img/facebook.png);
+	border-radius: 10px;
+}
+
+
+#LinkedIn {
+	background-image: url(img/linked.png);
+}
+
+#GitHub {
+    background-image: url(img/github.png);
+}
+
+#lastfm {
+	background-image: url(img/lastfm.png);
+	border-radius: 10px;
+}
+

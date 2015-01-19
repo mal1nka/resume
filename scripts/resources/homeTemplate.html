@@ -1,0 +1,115 @@
+<div id="header">
+    <h3><%=specialty%></h3>
+    <h1><%print(surname+" "+name)%></h1>
+</div>
+<div id="content">
+    <div id="rope-left"></div>
+    <div id="rope-right"></div>
+    <div id="center">
+        <div id="bubble1"></div>
+        <div id="bubble3"></div>
+        <div id="bubble2"></div>
+        <div id="bubble4"></div>
+    </div>
+    <div id="contact">
+        <div id="circle">
+            <div id="middle">
+                <div class="title_contact">CONTACT ME</div>
+                <ul>
+                    <li id="email">
+                        <div class="hint">Email:</div>
+                        <div><%=contacts.email%></div>
+                    </li>
+
+                    <li id="skype">
+                        <div class="hint">Skype:</div>
+                        <div><%=contacts.skype%></div>
+                    </li>
+                </ul>
+                <div class="socialButtons">
+                    <% _.each(contacts.socialNets, function(value) { %>
+                        <a id="<%=value.name%>" href="<%=value.profileURL%>" target="_blank"></a>
+                    <% }); %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="title">
+            <div class="circle">
+                <div class="arrow"></div>
+            </div>
+            <div class="title_section">ABOUT ME</div>
+        </div>
+        <div class="section">
+            <ul>
+                <li><%=about%></li>
+                <!--<li><span> Experience in IT industry: </span> ~ 2 years (as a front-end developer), Ukraine, Vinnytsia.-->
+                <!--</li>-->
+                <!--<li><span> English: </span> pre-intermediate level.</li>-->
+            </ul>
+            <div class="title_section">OBJECTIVE</div>
+            <ul>
+                <li><%=objective%>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="education">
+        <div class="title">
+            <div class="circle">
+                <div class="arrow"></div>
+            </div>
+            <div class="title_section">EDUCATION</div>
+        </div>
+        <div class="section">
+            <ul>
+                <% _.each(education, function(val){ %>
+                    <li><span><%=val.terms%>: </span> <%=val.name%></li>
+                <% }); %>
+            </ul>
+        </div>
+    </div>
+    <div class="skills">
+        <div class="title">
+            <div class="circle">
+                <div class="arrow"></div>
+            </div>
+            <div class="title_section">SKILLS</div>
+        </div>
+        <div class="section">
+            <ul>
+                <li><span>Languages: </span> <% print(skills.languages.join(', '));%></li>
+                <li><span>Frameworks / libraries: </span> <% print(skills.libs.join(', '));%></li>
+                <li><span>Other technologies:</span> <% print(skills.others.join(', '));%></li>
+            </ul>
+        </div>
+    </div>
+    <div class="exp">
+        <div class="title">
+            <div class="circle">
+                <div class="arrow"></div>
+            </div>
+            <div class="title_section">EXPERIENCE</div>
+        </div>
+        <div class="section">
+            <ul>
+                <% _.each(exp, function(val) { %>
+                    <li><span><%=val.terms%>:</span>
+                        <a target="_blank" href="<%=val.companySite%>"><%=val.companyName%></a>, <% print(val.jobTitle+', '+val.description);%></li>
+                <% }); %>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="download">
+        <div class="circle">
+            <div class="arrow"></div>
+        </div>
+        DOWNLOAD
+        <% _.each(files, function(val) { %>
+            <a target="_blank" href="<%=val.url%>"><%=val.fileName%></a>
+        <% }); %>
+    </div>
+</div>
